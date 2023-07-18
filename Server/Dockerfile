@@ -6,6 +6,6 @@ COPY . .
 EXPOSE 3000
 RUN ls
 RUN apk --no-cache add postgresql-client
-RUN PGPASSWORD=1TEPFBJ4pl40Yd9KwcA7rzchcp6GKTZ2 psql -h dpg-cir0crlph6ev5r98kiig-a.oregon-postgres.render.com -U postgres_blueocean -d blueocean_t86e \
+RUN PGPASSWORD=xaRPelCyyYvNgLSWiGYViJKhiPrT3WK2 psql -h dpg-cir5f75gkuvqadoklqhg-a.oregon-postgres.render.com -U postgres_blueocean -d blueocean_xb2h \
     -a -f src/Database/migration.sql -f src/Database/seed.sql
 CMD ["node", "src/server.js"]
